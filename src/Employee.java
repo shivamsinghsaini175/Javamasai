@@ -1,21 +1,25 @@
 public class Employee {
 
-   private String employeeName;
-    String employeeDesignation;
+    private String employeeName;
+    private String employeeDesignation;
     int employeeSalary;
     String employeeDob;
-    String employeeAddress;
+    private Address employeeAddress;
+
 
     public String getEmployeeDesignation() {
         return employeeDesignation;
     }
 
-    public Employee(String employeeName, String employeeAddress) {
-        this.employeeName = employeeName;
-        this.employeeAddress = employeeAddress;
+    public Employee() {
     }
 
-    public Employee() {
+    public Employee(String employeeName, Address employeeAddress, String employeeDob, int employeeSalary, String employeeDesignation) {
+        this.employeeName = employeeName;
+        this.employeeAddress = employeeAddress;
+        this.employeeDob = employeeDob;
+        this.employeeSalary = employeeSalary;
+        this.employeeDesignation = employeeDesignation;
     }
 
     public void setEmployeeDesignation(String employeeDesignation) {
@@ -46,9 +50,9 @@ public class Employee {
         this.employeeDob = employeeDob;
     }
 
-    public String getEmployeeAddress() {
-        return employeeAddress;
-    }
+//    public String getEmployeeAddress() {
+//        return employeeAddress;
+//    }
 
     @Override
     public String toString() {
@@ -57,11 +61,11 @@ public class Employee {
                 ", employeeDesignation='" + employeeDesignation + '\'' +
                 ", employeeSalary=" + employeeSalary +
                 ", employeeDob=" + employeeDob +
-                ", employeeAddress='" + employeeAddress + '\'' +
+                ", employeeAddress='" + employeeAddress.toString()+ '\'' +
                 '}';
     }
 
-    public void setEmployeeAddress(String employeeAddress) {
+    public void setEmployeeAddress(Address employeeAddress) {
         this.employeeAddress = employeeAddress;
     }
 
