@@ -12,11 +12,8 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
-                "city='" + city + '\'' +
+                " city='" + city + '\'' +
                 ", state='" + state + '\'' +
-                ", pin=" + pin +
-                '}';
     }
 
     public String getCity() {
