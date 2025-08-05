@@ -10,6 +10,11 @@ public class Employee {
         return employeeDesignation;
     }
 
+   
+
+    public Employee() {
+    }
+
     public void setEmployeeDesignation(String employeeDesignation) {
         this.employeeDesignation = employeeDesignation;
     }
