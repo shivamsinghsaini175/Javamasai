@@ -13,7 +13,7 @@ public class Address {
     @Override
     public String toString() {
                 return " city='" + city + '\'' +
-                ", state='" + state + '\'' +
+                ", state='" + state + '\'';
     }
 
     public String getCity() {
