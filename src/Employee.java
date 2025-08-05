@@ -10,7 +10,10 @@ public class Employee {
         return employeeDesignation;
     }
 
-   
+    public Employee(String employeeName, String employeeAddress) {
+        this.employeeName = employeeName;
+        this.employeeAddress = employeeAddress;
+    }
 
     public Employee() {
     }
